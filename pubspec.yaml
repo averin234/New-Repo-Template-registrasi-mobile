@@ -1,0 +1,60 @@
+name: rskgcare
+version: 1.0.0+1
+publish_to: none
+description: Rumah Sakit Budi Kemuliaan.
+
+environment:
+  sdk: ">=2.18.5 <3.0.0"
+
+dependencies:
+  appbar_animated: 0.0.3
+  crypto: ^3.0.3
+  cupertino_icons: 1.0.2
+  dio: 5.1.1
+  pull_to_refresh: ^2.0.0
+  gif_view: ^0.3.1
+  dismissible_page: ^1.0.2
+  particles_flutter: ^0.1.4
+  launch_review: ^3.0.1
+  smartrefresh: ^0.0.2
+  dropdown_button2: ^2.1.2
+  package_info: ^2.0.2
+  in_app_update: ^4.2.1
+  device_info_plus: ^8.0.0
+  #  flutter_advanced_calendar: ^1.3.0
+  # qr_code_scanner: ^1.0.1
+  mobile_scanner: ^3.2.0
+  # drop_down_list: 0.0.5
+  text_scroll: ^0.2.0
+  calendar_timeline: ^1.1.2
+  dropdown_search: 5.0.6
+  carousel_slider: ^4.1.1
+  horizontal_week_calendar: ^0.0.10
+  flutter:
+    sdk: flutter
+  flutter_onboarding_screen: 2.0.2
+  flutter_onboarding_slider: 1.0.9
+  flutter_staggered_grid_view: 0.6.2
+  flutter_svg: ^1.1.0
+  get: 4.6.5
+  # splashscreen: ^1.3.5
+  get_storage: ^2.1.1
+  flutter_staggered_animations: ^1.1.1
+  google_fonts: ^4.0.4
+  image_picker: ^0.8.7+4
+  intl: 0.18.1
+  shimmer_animation: ^2.1.0
+  search_page: ^2.3.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/icons/
