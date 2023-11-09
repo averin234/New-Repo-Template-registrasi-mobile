@@ -68,25 +68,25 @@ class _NoHomeViewState extends State<NoHomeView> {
                   snapshot.data != null) {
                 return ListView(
                   children: [
-                    FutureBuilder(
-                      future: API.getDetailKlinik(),
-                      builder: (context, snapshot) {
-                        if (snapshot.hasData &&
-                            snapshot.connectionState !=
-                                ConnectionState.waiting &&
-                            snapshot.data != null) {
-                          final data = snapshot.data!;
-                          return WidgetInfo(
-                            detailklinik: data,
-                          );
-                        } else {
-                          return Container();
-                        }
-                      },
-                    ),
+                    // FutureBuilder(
+                    //   future: API.getDetailKlinik(),
+                    //   builder: (context, snapshot) {
+                    //     if (snapshot.hasData &&
+                    //         snapshot.connectionState !=
+                    //             ConnectionState.waiting &&
+                    //         snapshot.data != null) {
+                    //       final data = snapshot.data!;
+                    //       return WidgetInfo(
+                    //         detailklinik: data,
+                    //       );
+                    //     } else {
+                    //       return Container();
+                    //     }
+                    //   },
+                    // ),
                     const SizedBox(height: 10),
                     Padding(
-                      padding: EdgeInsets.only(left: 20, top: 15, bottom: 15),
+                      padding: EdgeInsets.only(left: 20,),
                       child: Text(
                         "${CustomStringText().Antreanaatini}",
                         style: MyStyle.textTitleBlack,
@@ -95,7 +95,7 @@ class _NoHomeViewState extends State<NoHomeView> {
                     const WidgetNoAntri(),
                     Padding(
                       padding:
-                          const EdgeInsets.only(top: 15, right: 20, left: 20),
+                          const EdgeInsets.only(top: 10, right: 20, left: 20),
                       child: Text(
                         "${CustomStringText().LayananUtama}",
                         style: MyStyle.textTitleBlack,

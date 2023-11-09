@@ -28,11 +28,9 @@ import '../../data/model/login_and_regist/CheckUp.dart';
 import '../../data/model/regist_hemo/daftar_hemo.dart';
 
 class API {
-  // static const _url = 'https://rskg.sirs.co.id/';
-  static const _url = 'https://rskg.sirs.co.id/';
-  // static const _url = 'https://rsbk.sirs.co.id/';
+  static const _url = 'https://rsaverin.sirs.co.id/';
   static const _baseUrl = '${_url}api/v1';
-  static const _kodeKlinik = 'C00003';
+  static const _kodeKlinik = 'C00004';
   static const _getToken = '$_baseUrl/get-token.php';
   static const _getAksesPx = '$_baseUrl/px-akses.php';
   static const _postDaftarPxBaru = '$_baseUrl/post-daftar-px-baru.php';

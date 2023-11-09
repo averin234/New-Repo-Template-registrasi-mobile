@@ -1,7 +1,7 @@
 
 class CustomStringText {
-  String namaRS = "RSKG Habibi Ainun";
-  String NamaRSsingkatan = "RSKG";
+  String namaRS = "RS Averin SIRs";
+  String NamaRSsingkatan = "RS Averin SIRs";
   String daftarantrian = "Daftar Antrian";
   String AntrianPoli = "Antrian Poli";
   String AntrianHemodialisis = "Antrian Hemodialisis";
@@ -25,7 +25,7 @@ class CustomStringText {
   String Loading = "Loading..";
   String harusdiIsi = "Username dan Password harus di Isi";
   String RegistrasiAkun = "Registrasi Akun";
-  String UpdateAplikasi = "Maaf Menganggu penggunaan Aplikasi RSBK HealthCare\nMohon Segera Update Aplikasi";
+  String UpdateAplikasi = "Maaf Menganggu penggunaan Aplikasi RS Averin SIRs\nMohon Segera Update Aplikasi";
   String ulangsandi = "kami akan mengirimkan email berisi Default Password untuk menyetel ulang sandi Anda";
   String MasukanEmail = "Masukan Email Anda";
   String kirimemail = "Password baru sudah berhasil di kirim ke alamat email";
@@ -47,7 +47,7 @@ class CustomStringText {
 
   //menu home
 
-  String NamaRS2 = "RSKG \nHabibi Ainun";
+  String NamaRS2 = "RS Averin \nSIRs";
   String RegistrasiRS = "Registrasi \nRS";
   String RegistrasiHemodalisa = "Registrasi \nHemodalisa";
   String DaftarAntrean = "Daftar \nAntrean";

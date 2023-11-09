@@ -94,21 +94,21 @@ class _HomeView1State extends State<HomeView1> {
       // ListView, CustomScrollView, etc. here
       child: ListView(
         children: [
-          FutureBuilder(
-            future: API.getDetailKlinik(),
-            builder: (context, snapshot) {
-              if (snapshot.hasData &&
-                  snapshot.connectionState != ConnectionState.waiting &&
-                  snapshot.data != null) {
-                final data = snapshot.data!;
-                return WidgetInfo(
-                  detailklinik: data,
-                );
-              } else {
-                return const shimmernohome();
-              }
-            },
-          ),
+          // FutureBuilder(
+          //   future: API.getDetailKlinik(),
+          //   builder: (context, snapshot) {
+          //     if (snapshot.hasData &&
+          //         snapshot.connectionState != ConnectionState.waiting &&
+          //         snapshot.data != null) {
+          //       final data = snapshot.data!;
+          //       return WidgetInfo(
+          //         detailklinik: data,
+          //       );
+          //     } else {
+          //       return const shimmernohome();
+          //     }
+          //   },
+          // ),
           SizedBox(
             height: 10,
           ),
@@ -164,7 +164,7 @@ class _HomeView1State extends State<HomeView1> {
             },
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 15, right: 20, left: 20),
+            padding: const EdgeInsets.only(right: 20, left: 20),
             child: Text(
               "${CustomStringText().LayananUtama}",
               style:

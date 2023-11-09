@@ -15,9 +15,9 @@ class LoginController extends GetxController {
   void onInit() {
     ingatSaya.value = dataRegist.value.ingatSaya ?? false;
     if (ingatSaya.value == true) {
-      usernameController.text = dataRegist.value.email ?? 'demo123@mail.com';
+      usernameController.text = dataRegist.value.email ?? '';
       passwordController.text =
-          dataRegist.value.password ?? '0134a762b1c7d4acab4a766061b57093';
+          dataRegist.value.password ?? '';
     }
     super.onInit();
   }
