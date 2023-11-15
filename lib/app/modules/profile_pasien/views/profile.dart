@@ -64,19 +64,16 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
             icon: const Icon(Icons.arrow_circle_left_rounded),
           ),
           actions: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                IconButton(
-                  onPressed: () => Get.toNamed(Routes.EDIT_PROFILE),
-                  icon: const Icon(
-                    Icons.edit_note_rounded,
-                    color: CustomColors.warnabiru,
-                    size: 40,
-                  ),
+            Container(
+              margin: EdgeInsets.only(right: 15),
+            child : IconButton(
+              onPressed: () => Get.toNamed(Routes.EDIT_PROFILE),
+              icon: const Icon(
+                Icons.edit_note_rounded,
+                color: CustomColors.warnabiru,
+                size: 45,
                 ),
-                Text('${CustomStringText().Edit}', style: TextStyle(fontWeight: FontWeight.bold)),
-              ],
+              ),
             ),
           ],
           title: Text('${CustomStringText().ProfilePasien}'),

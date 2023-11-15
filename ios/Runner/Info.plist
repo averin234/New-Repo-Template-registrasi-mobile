@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>RS Averi Registrasi</string>
+	<string>Averin Registrasi</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,7 +15,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>RS Averi Registrasi</string>
+	<string>Averin Registrasi</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -29,9 +29,9 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Used to scan barcodes</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Allow “RSBK Medical Health” to access your photos to post images or to use as my profile picture</string>
+	<string>Allow “Averin Registrasi” to access your photos to post images or to use as my profile picture</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Allow “RSBK Medical Health” to access your photos to post images or to use as my profile picture</string>
+	<string>Allow “Averin Registrasi” to access your photos to post images or to use as my profile picture</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

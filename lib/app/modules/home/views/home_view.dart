@@ -8,16 +8,20 @@ import 'package:rskgcare/app/data/componen/images.dart';
 import 'package:rskgcare/app/widgets/card/grid_view_home.dart';
 import 'package:rskgcare/app/routes/app_pages.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-
+import 'package:search_page/search_page.dart';
+import '../../../data/model/regist_rs/all_dokter_klinik.dart';
 import '../../../widgets/card/card_info_rs.dart';
+import '../../../widgets/card/card_listview_poli.dart';
 import '../../../widgets/card/card_no_antri.dart';
 import '../../../widgets/card/card_slider_poli_home.dart';
 import '../../../widgets/card/card_slider_poli_no_home.dart';
 import '../../../widgets/card/card_text_raw.dart';
+import '../../../widgets/card/cari_dokter_home.dart';
 import '../../../widgets/color/custom_color.dart';
 import '../../../widgets/shammer/shimmer_antrihome.dart';
 import '../../../widgets/shammer/shimmer_nama_rs.dart';
 import '../../../widgets/text/string_text.dart';
+import '../../register_rs/views/widgets/cari_dokter.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView1 extends StatefulWidget {
@@ -80,6 +84,66 @@ class _HomeView1State extends State<HomeView1> {
                     fontWeight: FontWeight.bold, fontSize: 13),
               ),
             ),
+            actions: [
+
+
+              FutureBuilder(
+                  future: API.getAllDokterKlinik(filter: ''),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData &&
+                        snapshot.connectionState != ConnectionState.waiting &&
+                        snapshot.data != null) {
+                      final data = snapshot.data!.items!;
+                      return
+                        InkWell(
+                          onTap: () {
+                            showSearch(
+                              context: context,
+                              delegate: SearchPage<Items>(
+                                items: data,
+                                searchLabel:
+                                'Cari Nama Dokter/Spesialisasi/Hari Periksa',
+                                searchStyle: GoogleFonts.nunito(),
+                                showItemsOnEmpty: true,
+                                failure: Center(
+                                  child: Text(
+                                    'Dokter Tidak Terdaftar :(',
+                                    style: GoogleFonts.nunito(),
+                                  ),
+                                ),
+                                filter: (dokter) => [
+                                  // dokter.jadwal![0].id,
+                                  dokter.kodeDokter,
+                                  dokter.no.toString(),
+                                  dokter.namaPegawai,
+                                  dokter.namaBagian,
+                                  // dokter.jadwal![0].rangeHari,
+                                ],
+                                builder: (dokter) => CardListViewPoli(
+                                    items: dokter, isNoHome: false),
+                              ),
+                            );
+                          },
+                          child:  Container(
+                            margin: EdgeInsets.only(right: 20),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                  width: 6,
+                                ),
+                                Icon(Icons.search_rounded, color: Colors.blue,),
+                                Text('Pencarian'),
+                              ],
+                            ),
+                          ),
+                        );
+                    } else {
+                      return Container(
+
+                      );
+                    }
+                  }),
+            ],
             automaticallyImplyLeading: false,
             elevation: 1,
             shadowColor: CustomColors.warnabiru),
