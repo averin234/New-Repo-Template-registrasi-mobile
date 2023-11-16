@@ -94,9 +94,10 @@ class _HomeView1State extends State<HomeView1> {
                       final data = snapshot.data!.items!;
                       return
                       Container(
-                        margin: EdgeInsets.only(bottom: 20, right: 10, top: 20),
+                        margin: EdgeInsets.only(bottom: 15, right: 10, top: 20),
                         decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey),
+                          color: Colors.white,
+                            border: Border.all(color: Colors.grey.shade200),
                             borderRadius: BorderRadius.circular(10)
                         ),
                         child:
