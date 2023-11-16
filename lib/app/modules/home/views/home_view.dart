@@ -85,8 +85,6 @@ class _HomeView1State extends State<HomeView1> {
               ),
             ),
             actions: [
-
-
               FutureBuilder(
                   future: API.getAllDokterKlinik(filter: ''),
                   builder: (context, snapshot) {
@@ -95,6 +93,13 @@ class _HomeView1State extends State<HomeView1> {
                         snapshot.data != null) {
                       final data = snapshot.data!.items!;
                       return
+                      Container(
+                        margin: EdgeInsets.only(bottom: 20, right: 10, top: 20),
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
+                        child:
                         InkWell(
                           onTap: () {
                             showSearch(
@@ -131,11 +136,12 @@ class _HomeView1State extends State<HomeView1> {
                                 SizedBox(
                                   width: 6,
                                 ),
-                                Icon(Icons.search_rounded, color: Colors.blue,),
-                                Text('Pencarian'),
+                                Icon(Icons.search_rounded, color: Colors.grey, size: 20),
+                                Text('Cari Dokter', style: TextStyle(color: Colors.grey)),
                               ],
                             ),
                           ),
+                        ),
                         );
                     } else {
                       return Container(
