@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rskgcare/app/routes/app_pages.dart';
+import 'package:sirs_averin/app/routes/app_pages.dart';
 
 import '../../data/componen/data_regist_model.dart';
 import '../../data/componen/local_storage.dart';
@@ -13,8 +13,8 @@ class DialogLogout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 90, bottom: 320),
-      padding: EdgeInsets.only(
+      margin: const EdgeInsets.only(top: 90, bottom: 320),
+      padding: const EdgeInsets.only(
         left: 20,
         right: 20,
       ),
@@ -24,7 +24,7 @@ class DialogLogout extends StatelessWidget {
           color: CustomColors.warnaputih,
         ),
         child: Padding(
-          padding: EdgeInsets.only(left: 10, right: 10),
+          padding: const EdgeInsets.only(left: 10, right: 10),
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
@@ -43,14 +43,14 @@ class DialogLogout extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                Text("Apakah anda ingin Keluar?",
+                const Text("Apakah anda ingin Keluar?",
                     style: TextStyle(
                         color: CustomColors.warnahitam,
                         fontSize: 18,
                         decoration: TextDecoration.none,
                         fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Row(
@@ -76,12 +76,12 @@ class DialogLogout extends StatelessWidget {
                         Get.offAllNamed(Routes.LOGIN);
                       },
                       child: Container(
-                        padding: EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(10),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(7),
                           color: Colors.redAccent,
                         ),
-                        child: Text(
+                        child: const Text(
                           "Ya",
                           style: TextStyle(
                             color: CustomColors.warnaputih,
@@ -92,19 +92,19 @@ class DialogLogout extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 30,
                     ),
                     Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(7),
                         color: CustomColors.warnabiru,
                       ),
                       child: GestureDetector(
                         onTap: () => Get.back(),
-                        child: Column(
-                          children: const [
+                        child: const Column(
+                          children: [
                             Text(
                               "Tidak",
                               style: TextStyle(

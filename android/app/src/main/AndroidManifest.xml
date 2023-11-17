@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="averin.sirs_rskg.com">
+    package="averin.sirs.com">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-feature
         android:name="android.hardware.camera2.full"
@@ -18,7 +18,7 @@
     <application
         android:label="RSBK HealthCare"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"

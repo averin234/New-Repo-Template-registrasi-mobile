@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/data/model/homepage/poli.dart';
-import 'package:rskgcare/app/modules/register_rs/controllers/register_rs_controller.dart';
-import 'package:rskgcare/app/widgets/card/card_listview_poli.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/data/model/homepage/poli.dart';
+import 'package:sirs_averin/app/modules/register_rs/controllers/register_rs_controller.dart';
+import 'package:sirs_averin/app/widgets/card/card_listview_poli.dart';
 import 'package:search_page/search_page.dart';
 
 import '../../data/model/regist_rs/all_dokter_klinik.dart';
 import '../color/custom_color.dart';
 
-
 class CariDokterHome extends StatefulWidget {
   const CariDokterHome({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   _CariDokterHomeState createState() => _CariDokterHomeState();
@@ -69,8 +68,8 @@ class AppTextField extends StatelessWidget {
     required this.hint,
     required this.isCitySelected,
     required this.lists,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   /// This is on text changed method which will display on city text field on changed.
   void onTextFieldTap(context) {
@@ -89,7 +88,7 @@ class AppTextField extends StatelessWidget {
                   items: data,
                   searchLabel: 'Cari Nama Dokter/Spesialisasi/Hari Periksa',
                   searchStyle:
-                  GoogleFonts.nunito(color: CustomColors.warnahitam),
+                      GoogleFonts.nunito(color: CustomColors.warnahitam),
                   showItemsOnEmpty: true,
                   failure: Center(
                     child: Text(
@@ -147,7 +146,7 @@ class AppTextField extends StatelessWidget {
                       delegate: SearchPage<Items>(
                         items: data,
                         searchLabel:
-                        'Cari Nama Dokter/Spesialisasi/Hari Periksa',
+                            'Cari Nama Dokter/Spesialisasi/Hari Periksa',
                         searchStyle: GoogleFonts.nunito(),
                         showItemsOnEmpty: true,
                         failure: Center(

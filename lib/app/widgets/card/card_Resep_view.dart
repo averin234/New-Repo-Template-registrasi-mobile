@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/data/model/mr_pasien/detailRiwayat.dart';
+import 'package:sirs_averin/app/data/model/mr_pasien/detailRiwayat.dart';
 import '../color/custom_color.dart';
 
 class CardResep extends StatelessWidget {
@@ -166,7 +166,7 @@ class CardResep extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Divider(
+                        const Divider(
                           color: Colors.grey,
                         )
                       ],

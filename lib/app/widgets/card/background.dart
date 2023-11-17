@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:particles_flutter/particles_flutter.dart';
 
 class MyCustomWidget extends StatelessWidget {
+  const MyCustomWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     double h = MediaQuery.of(context).size.height;
@@ -16,7 +18,7 @@ class MyCustomWidget extends StatelessWidget {
         speedOfParticles: 1.5,
         maxParticleSize: 7,
         particleColor: Colors.white.withOpacity(.7),
-        awayAnimationDuration: Duration(milliseconds: 600),
+        awayAnimationDuration: const Duration(milliseconds: 600),
         awayAnimationCurve: Curves.easeInOutBack,
         onTapAnimation: true,
         isRandSize: true,

@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/data/model/regist_rs/antrian_dokter.dart';
-import 'package:rskgcare/app/modules/detail-poli/controllers/detail_poli_controller.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/data/model/regist_rs/antrian_dokter.dart';
+import 'package:sirs_averin/app/modules/detail-poli/controllers/detail_poli_controller.dart';
 
 import '../../data/model/regist_rs/daftar_px.dart';
 import '../color/custom_color.dart';
@@ -24,7 +24,7 @@ class CardFromPoli extends StatelessWidget {
       children: [
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 10),
-          child: Column(
+          child: const Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -242,7 +242,7 @@ class EmailPasswordWidget extends GetView<DetailPoliController> {
         ),
         Container(
           decoration: BoxDecoration(
-            border: Border.fromBorderSide(
+            border: const Border.fromBorderSide(
               BorderSide(color: CustomColors.warnaputih),
             ),
             borderRadius: BorderRadius.circular(10),
@@ -256,7 +256,7 @@ class EmailPasswordWidget extends GetView<DetailPoliController> {
                   : CustomColors.warnaputih,
             ),
             decoration: InputDecoration(
-                border: OutlineInputBorder(
+                border: const OutlineInputBorder(
                   borderRadius: BorderRadius.all(
                     Radius.circular(10.0),
                   ),
@@ -265,7 +265,7 @@ class EmailPasswordWidget extends GetView<DetailPoliController> {
                     style: BorderStyle.none,
                   ),
                 ),
-                suffixIcon: Icon(
+                suffixIcon: const Icon(
                   Icons.calendar_month_rounded,
                   color: CustomColors.warnabiru,
                 ),
@@ -317,7 +317,7 @@ class MyField extends GetView<DetailPoliController> {
             height: 10,
           ),
           TextField(
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             controller: controller.noAntrianController.value,
             textAlign: TextAlign.center,
             readOnly: true,
@@ -373,10 +373,10 @@ class MyDropDown extends GetView<DetailPoliController> {
               color: Theme.of(context).brightness == Brightness.light
                   ? CustomColors.warnaputih
                   : CustomColors.darkmode1,
-              border: Border.fromBorderSide(
+              border: const Border.fromBorderSide(
                 BorderSide(color: CustomColors.warnaputih),
               ),
-              borderRadius: BorderRadius.all(
+              borderRadius: const BorderRadius.all(
                 Radius.circular(10.0),
               ),
             ),
@@ -403,12 +403,15 @@ class MyDropDown extends GetView<DetailPoliController> {
                   ),
                   fillColor: CustomColors.warnahitam,
                   floatingLabelStyle: GoogleFonts.nunito(
-                      textStyle: TextStyle(color: CustomColors.warnahitam)),
+                      textStyle:
+                          const TextStyle(color: CustomColors.warnahitam)),
                   labelStyle: GoogleFonts.nunito(
-                      textStyle: TextStyle(color: CustomColors.warnahitam)),
+                      textStyle:
+                          const TextStyle(color: CustomColors.warnahitam)),
                   counterStyle: GoogleFonts.nunito(
-                      textStyle: TextStyle(color: CustomColors.warnahitam)),
-                  hintStyle: TextStyle(color: CustomColors.warnahitam),
+                      textStyle:
+                          const TextStyle(color: CustomColors.warnahitam)),
+                  hintStyle: const TextStyle(color: CustomColors.warnahitam),
                 ),
               ),
               onChanged: (value) {

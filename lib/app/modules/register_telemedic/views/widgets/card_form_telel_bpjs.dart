@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:rskgcare/app/modules/register_telemedic/controllers/register_telemedic_controller.dart';
+import 'package:sirs_averin/app/modules/register_telemedic/controllers/register_telemedic_controller.dart';
 
 import '../../../../widgets/color/custom_color.dart';
 
@@ -81,14 +81,14 @@ class CardFromPBJS extends StatelessWidget {
             obscureText: isPassword,
             decoration: InputDecoration(
               enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(
+                borderSide: const BorderSide(
                   width: 1,
                   color: Color(0xffeaeaea),
                 ),
                 borderRadius: BorderRadius.circular(10.0), //<-- SEE HERE
               ),
               border: InputBorder.none,
-              fillColor: Color(0xffffffff),
+              fillColor: const Color(0xffffffff),
               filled: true,
             ),
           )
@@ -129,7 +129,7 @@ class CardFromPBJS extends StatelessWidget {
       width: Get.width,
       padding: const EdgeInsets.symmetric(vertical: 15),
       alignment: Alignment.center,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(10)),
           boxShadow: <BoxShadow>[
             BoxShadow(
@@ -158,7 +158,7 @@ class CardFromPBJS extends StatelessWidget {
   Widget _emailPasswordWidget() {
     final controller = Get.put(RegisterTelemedicController());
     return Container(
-        decoration: BoxDecoration(),
+        decoration: const BoxDecoration(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -232,8 +232,8 @@ class CustomRadio extends GetView<RegisterTelemedicController> {
                               ? 2.0
                               : 0.5,
                           color: (controller.jnsKunjBPJSController.value == '1')
-                              ? Color(0xff4babe7)
-                              : Color(0xff4babe7)),
+                              ? const Color(0xff4babe7)
+                              : const Color(0xff4babe7)),
                     ),
                     child: Stack(
                       children: [
@@ -268,7 +268,7 @@ class CustomRadio extends GetView<RegisterTelemedicController> {
                               ? 2.0
                               : 0.5,
                           color: (controller.jnsKunjBPJSController.value == '2')
-                              ? Color(0xff4babe7)
+                              ? const Color(0xff4babe7)
                               : const Color(0xff4babe7)),
                     ),
                     child: Stack(

@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:rskgcare/app/data/componen/publics.dart';
+import 'package:sirs_averin/app/data/componen/publics.dart';
 
 class NoHomeController extends GetxController {
   //TODO: Implement NoHomeController

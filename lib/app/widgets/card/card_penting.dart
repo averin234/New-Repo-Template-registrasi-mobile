@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:text_scroll/text_scroll.dart';
@@ -17,7 +16,7 @@ class _PentingState extends State<Penting> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.only(top: 10, bottom: 10),
+        padding: const EdgeInsets.only(top: 10, bottom: 10),
         decoration: BoxDecoration(
           color: Colors.redAccent,
           boxShadow: [
@@ -25,7 +24,7 @@ class _PentingState extends State<Penting> {
               color: Colors.grey.withOpacity(0.1),
               spreadRadius: 5,
               blurRadius: 4,
-              offset: Offset(0, 0), // changes position of shadow
+              offset: const Offset(0, 0), // changes position of shadow
             ),
           ],
         ),
@@ -33,7 +32,7 @@ class _PentingState extends State<Penting> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 10),
+              padding: const EdgeInsets.only(left: 10),
               child: Text(
                 'Penting !!',
                 style: GoogleFonts.nunito(
@@ -42,7 +41,7 @@ class _PentingState extends State<Penting> {
                     fontSize: 13),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             TextScroll(

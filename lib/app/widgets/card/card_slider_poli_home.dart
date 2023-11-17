@@ -64,7 +64,7 @@ class Item1 extends StatelessWidget {
       decoration: BoxDecoration(
         color: Theme.of(context).brightness == Brightness.light
             ? Colors.white
-            : Color(0xff404258),
+            : const Color(0xff404258),
         border: Border.all(color: const Color(0x6cc7d1db)),
         borderRadius: BorderRadius.circular(15),
       ),
@@ -260,8 +260,8 @@ class Item1 extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           color:
                           Theme.of(context).brightness == Brightness.light
-                              ? Color(0xffecf8ff)
-                              : Color(0xff404258),
+                              ? const Color(0xffecf8ff)
+                              : const Color(0xff404258),
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -271,7 +271,7 @@ class Item1 extends StatelessWidget {
                               height: 10,
                             ),
                             Padding(
-                              padding: EdgeInsets.only(left: 10),
+                              padding: const EdgeInsets.only(left: 10),
                               child: Text(
                                 'Jadwal Praktik',
                                 style: TextStyle(

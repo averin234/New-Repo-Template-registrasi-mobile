@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rskgcare/app/data/model/regist_rs/daftar_px.dart';
+import 'package:sirs_averin/app/data/model/regist_rs/daftar_px.dart';
 
 import '../../widgets/color/custom_color.dart';
 
@@ -13,8 +13,8 @@ class DialogGagalRegis extends StatelessWidget {
     return Column(
       children: [
         Container(
-          margin: EdgeInsets.only(right: 10, left: 10, top: 200),
-          padding: EdgeInsets.only(
+          margin: const EdgeInsets.only(right: 10, left: 10, top: 200),
+          padding: const EdgeInsets.only(
             left: 10,
             right: 10,
           ),
@@ -49,13 +49,14 @@ class DialogGagalRegis extends StatelessWidget {
                 GestureDetector(
                   onTap: () => Get.back(),
                   child: Container(
-                    padding: EdgeInsets.all(10),
-                    margin: EdgeInsets.only(left: 100, right: 100, bottom: 10),
+                    padding: const EdgeInsets.all(10),
+                    margin: const EdgeInsets.only(
+                        left: 100, right: 100, bottom: 10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(7),
                       color: CustomColors.warnabiru,
                     ),
-                    child: Text(
+                    child: const Text(
                       "Kembali",
                       textAlign: TextAlign.center,
                       style: TextStyle(

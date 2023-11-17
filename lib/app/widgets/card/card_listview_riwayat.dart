@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/data/model/mr_pasien/listMRPX.dart';
+import 'package:sirs_averin/app/data/model/mr_pasien/listMRPX.dart';
 import '../../routes/app_pages.dart';
 import '../color/custom_color.dart';
 
@@ -17,7 +17,7 @@ class CardListViewRiawayat extends StatelessWidget {
     return Column(
       children: [
         Container(
-          decoration: BoxDecoration(),
+          decoration: const BoxDecoration(),
           padding: const EdgeInsets.only(top: 10),
           margin: const EdgeInsets.symmetric(vertical: 0, horizontal: 10),
           child: Column(

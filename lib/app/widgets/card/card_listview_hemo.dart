@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/data/model/profile_pasien/data_px.dart';
+import 'package:sirs_averin/app/data/model/profile_pasien/data_px.dart';
 import '../../data/model/antrian_rs/jadwal_px_hemo.dart';
 import '../../routes/app_pages.dart';
 import '../color/custom_color.dart';
@@ -77,7 +77,7 @@ class CardListViewHemo extends StatelessWidget {
                   Container(
                     height: 1.5,
                     width: 320.0,
-                    color:CustomColors.warnaabu,
+                    color: CustomColors.warnaabu,
                     margin: const EdgeInsets.only(bottom: 0),
                   ),
                   const SizedBox(

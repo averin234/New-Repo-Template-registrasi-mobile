@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rskgcare/app/routes/app_pages.dart';
+import 'package:sirs_averin/app/routes/app_pages.dart';
 
 import '../../widgets/color/custom_color.dart';
 
@@ -12,8 +12,8 @@ class DialogSuksesRegis extends StatelessWidget {
     return Column(
       children: [
         Container(
-          margin: EdgeInsets.only(right: 10, left: 10, top: 200),
-          padding: EdgeInsets.only(
+          margin: const EdgeInsets.only(right: 10, left: 10, top: 200),
+          padding: const EdgeInsets.only(
             left: 10,
             right: 10,
           ),
@@ -42,7 +42,7 @@ class DialogSuksesRegis extends StatelessWidget {
                         decoration: TextDecoration.none,
                         fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 const Text(
@@ -61,13 +61,14 @@ class DialogSuksesRegis extends StatelessWidget {
                     Get.toNamed(Routes.DAFTAR_ANTRIAN);
                   },
                   child: Container(
-                    margin: EdgeInsets.only(left: 40, right: 40, bottom: 10),
-                    padding: EdgeInsets.all(10),
+                    margin:
+                        const EdgeInsets.only(left: 40, right: 40, bottom: 10),
+                    padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(7),
                       color: CustomColors.warnabiru,
                     ),
-                    child: Text(
+                    child: const Text(
                       "Lihat Antrean",
                       textAlign: TextAlign.center,
                       style: TextStyle(

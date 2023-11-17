@@ -21,12 +21,12 @@ class MyDropDown extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(top: 5, bottom: 5),
       decoration: BoxDecoration(
-        border: Border.all(width: 1, color: Color(0xffeaeaea)),
+        border: Border.all(width: 1, color: const Color(0xffeaeaea)),
         color: Theme.of(context).brightness == Brightness.light
             ? CustomColors.warnaputih
             : CustomColors.darkmode1,
         borderRadius: const BorderRadius.all(
-          const Radius.circular(10.0),
+          Radius.circular(10.0),
         ),
       ),
       child: DropdownSearch<Dropdowns>(

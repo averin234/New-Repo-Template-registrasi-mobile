@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/data/componen/publics.dart';
-import 'package:rskgcare/app/data/model/profile_pasien/data_px.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/data/componen/publics.dart';
+import 'package:sirs_averin/app/data/model/profile_pasien/data_px.dart';
 import 'app/routes/app_pages.dart';
 import 'app/widgets/color/custom_color.dart';
 import 'app/widgets/text/string_text.dart';
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: '${CustomStringText().namaRS}',
+      title: CustomStringText().namaRS,
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
           color: CustomColors.warnaputih,
@@ -54,7 +54,7 @@ class MyApp extends StatelessWidget {
 class AppTheme {
   static final lightTheme = ThemeData(
       brightness: Brightness.light,
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         color: CustomColors.warnaputih,
         foregroundColor: CustomColors.warnahitam,
         iconTheme: IconThemeData(color: CustomColors.warnahitam),
@@ -66,7 +66,7 @@ class AppTheme {
         primary: Colors.grey[900]!,
         secondary: Colors.grey[900]!,
       ),
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         backgroundColor: CustomColors.warnahitam,
         foregroundColor: CustomColors.warnaputih,
         iconTheme: IconThemeData(color: CustomColors.warnahitam),

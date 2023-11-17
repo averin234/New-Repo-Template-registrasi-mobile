@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/routes/app_pages.dart';
+import 'package:sirs_averin/app/routes/app_pages.dart';
 
 import '../../../../widgets/assets/logo.dart';
 import '../../../../widgets/text/string_text.dart';
@@ -53,7 +53,7 @@ class Headerlogin extends StatelessWidget {
                 animation: animation,
                 additionalOffset: 0.0,
                 child: Text(
-                  '${CustomStringText().namaRS}',
+                  CustomStringText().namaRS,
                   style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                         color: kBlack,
                         fontWeight: FontWeight.bold,

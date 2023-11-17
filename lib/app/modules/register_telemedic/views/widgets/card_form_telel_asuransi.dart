@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/widgets/componen/mydropdown.dart';
-import 'package:rskgcare/app/modules/register_telemedic/controllers/register_telemedic_controller.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/widgets/componen/mydropdown.dart';
+import 'package:sirs_averin/app/modules/register_telemedic/controllers/register_telemedic_controller.dart';
 
 import '../../../../data/model/dropdown_model.dart';
 import '../../../../widgets/color/custom_color.dart';
@@ -101,7 +101,7 @@ class CardFromAsuransi extends StatelessWidget {
   }) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -124,7 +124,7 @@ class CardFromAsuransi extends StatelessWidget {
       width: Get.width,
       padding: const EdgeInsets.symmetric(vertical: 15),
       alignment: Alignment.center,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(10)),
           boxShadow: <BoxShadow>[
             BoxShadow(

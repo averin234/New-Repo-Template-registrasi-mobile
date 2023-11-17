@@ -40,7 +40,7 @@ class WidgetTitle2 extends StatelessWidget {
             ),
           ],
         ),
-        Text("Buat Janji dengan dokter sesuai kebutuhanmu."),
+        const Text("Buat Janji dengan dokter sesuai kebutuhanmu."),
       ]),
     );
   }

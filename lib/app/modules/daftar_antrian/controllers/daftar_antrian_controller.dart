@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:rskgcare/app/data/componen/local_storage.dart';
+import 'package:sirs_averin/app/data/componen/local_storage.dart';
 
 class DaftarAntrianController extends GetxController {
   //TODO: Implement DaftarAntrianController

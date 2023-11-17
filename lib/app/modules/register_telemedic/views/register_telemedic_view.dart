@@ -2,15 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/modules/register_telemedic/views/widgets/card_form_tele.dart';
-import 'package:rskgcare/app/modules/register_telemedic/views/widgets/widget_slider_hemo.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/modules/register_telemedic/views/widgets/card_form_tele.dart';
 import '../../../widgets/color/custom_color.dart';
 import '../../../widgets/font_size/my_font_size.dart';
 import '../controllers/register_telemedic_controller.dart';
 
 class RegisterTelemedicView extends GetView<RegisterTelemedicController> {
-  const RegisterTelemedicView({Key? key}) : super(key: key);
+  const RegisterTelemedicView({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,8 +40,8 @@ class RegisterTelemedicView extends GetView<RegisterTelemedicController> {
           // Other Sliver Widgets
           SliverList(
             delegate: SliverChildListDelegate([
-              Column(
-                children: const [
+              const Column(
+                children: [
                   SizedBox(
                     height: 10,
                   ),
@@ -67,14 +66,14 @@ class RegisterTelemedicView extends GetView<RegisterTelemedicController> {
         ),
         height: 75,
         margin: const EdgeInsets.symmetric(vertical: 2, horizontal: 0),
-        padding: EdgeInsets.only(right: 10, left: 10),
+        padding: const EdgeInsets.only(right: 10, left: 10),
         child: Row(
           children: <Widget>[
-            SizedBox(
+            const SizedBox(
               width: 230,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const <Widget>[
+                children: <Widget>[
                   Padding(
                       padding: EdgeInsets.only(left: 10),
                       child: Text("Regis Hemodialisis utk Lanjutkan",
@@ -85,7 +84,7 @@ class RegisterTelemedicView extends GetView<RegisterTelemedicController> {
             Expanded(
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Color(0xff4babe7),
+                  backgroundColor: const Color(0xff4babe7),
                   minimumSize: const Size.fromHeight(50),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12), // <-- Radius
@@ -126,7 +125,7 @@ class RegisterTelemedicView extends GetView<RegisterTelemedicController> {
                   Get.snackbar((daftarHemo.code ?? 500).toString(),
                       daftarHemo.msg ?? '');
                 },
-                child: Text('Lanjutkan'),
+                child: const Text('Lanjutkan'),
               ),
             ),
           ],

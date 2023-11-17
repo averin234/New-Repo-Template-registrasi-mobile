@@ -52,7 +52,7 @@ class WidgetTitle3 extends GetView<RegisterTelemedicController> {
                       height: 40,
                       padding: const EdgeInsets.only(left: 10, right: 10),
                       decoration: BoxDecoration(
-                        border: Border.all(width: 1, color: Color(0xffeaeaea)),
+                        border: Border.all(width: 1, color: const Color(0xffeaeaea)),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       elevation: 0,

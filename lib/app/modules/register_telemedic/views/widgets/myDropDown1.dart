@@ -37,16 +37,16 @@ class MyDropDown2 extends StatelessWidget {
         itemAsString: (item) => item.kategori,
         dropdownDecoratorProps: DropDownDecoratorProps(
           dropdownSearchDecoration: InputDecoration(
-            contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+            contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 10),
             enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 width: 1,
                 color: Color(0xffeaeaea),
               ),
               borderRadius: BorderRadius.circular(10.0), //<-- SEE HERE
             ),
             border:
-                OutlineInputBorder(borderSide: BorderSide(color: Colors.grey)),
+                const OutlineInputBorder(borderSide: BorderSide(color: Colors.grey)),
           ),
         ),
         onChanged: (value) {

@@ -20,7 +20,7 @@ class MyDropDown1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(top: 5, bottom: 5),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: CustomColors.warnaputih,
         borderRadius: BorderRadius.all(
           Radius.circular(10.0),
@@ -38,15 +38,15 @@ class MyDropDown1 extends StatelessWidget {
         itemAsString: (item) => item.kategori,
         dropdownDecoratorProps: DropDownDecoratorProps(
           dropdownSearchDecoration: InputDecoration(
-            contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+            contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 10),
             enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 width: 1,
                 color: Color(0xffeaeaea),
               ),
               borderRadius: BorderRadius.circular(10.0), //<-- SEE HERE
             ),
-            border: OutlineInputBorder(
+            border: const OutlineInputBorder(
               borderRadius: BorderRadius.all(
                 Radius.circular(10.0),
               ),

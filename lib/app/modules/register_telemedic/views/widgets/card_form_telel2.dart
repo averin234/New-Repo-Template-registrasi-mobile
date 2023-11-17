@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/data/model/regist_hemo/dokter_hemo.dart';
-import 'package:rskgcare/app/widgets/componen/mydropdown.dart';
-import 'package:rskgcare/app/modules/register_telemedic/controllers/register_telemedic_controller.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/data/model/regist_hemo/dokter_hemo.dart';
+import 'package:sirs_averin/app/widgets/componen/mydropdown.dart';
+import 'package:sirs_averin/app/modules/register_telemedic/controllers/register_telemedic_controller.dart';
 import '../../../../data/model/dropdown_model.dart';
 import '../../../../widgets/color/custom_color.dart';
 import 'myDropDown1.dart';
@@ -154,7 +154,7 @@ class CardFromtele2 extends StatelessWidget {
       width: Get.width,
       padding: const EdgeInsets.symmetric(vertical: 15),
       alignment: Alignment.center,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(10)),
           boxShadow: <BoxShadow>[
             BoxShadow(
@@ -186,12 +186,12 @@ class CardFromtele2 extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.only(left: 10),
             child: Text('Tentukan Jadwal,Jam dan Dokter Pemeriksa',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
           ),
-          Divider(
+          const Divider(
             color: Colors.grey,
           ),
           const SizedBox(
@@ -261,13 +261,13 @@ Widget _calender(String title, {required TextEditingController controller}) {
         textInputAction: TextInputAction.next,
         decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
               width: 1,
               color: Color(0xffeaeaea),
             ),
             borderRadius: BorderRadius.circular(10.0), //<-- SEE HERE
           ),
-          border: OutlineInputBorder(
+          border: const OutlineInputBorder(
             borderRadius: BorderRadius.all(
               Radius.circular(10.0),
             ),
@@ -276,9 +276,9 @@ Widget _calender(String title, {required TextEditingController controller}) {
               style: BorderStyle.none,
             ),
           ),
-          suffixIcon:
-              Icon(Icons.calendar_month_rounded, color: Color(0xff4babe7)),
-          fillColor: Color(0xffffffff),
+          suffixIcon: const Icon(Icons.calendar_month_rounded,
+              color: Color(0xff4babe7)),
+          fillColor: const Color(0xffffffff),
           filled: true,
         ),
         controller: controller,

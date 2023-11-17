@@ -16,7 +16,7 @@ class CardNoSpesialisasi extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
             alignment: Alignment.center,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(10)),
               boxShadow: <BoxShadow>[
                 BoxShadow(
@@ -31,7 +31,7 @@ class CardNoSpesialisasi extends StatelessWidget {
             child: Image.asset('assets/images/nospesialisasi.png'),
           ),
         ),
-        SizedBox(height: 300)
+        const SizedBox(height: 300)
       ],
     );
   }

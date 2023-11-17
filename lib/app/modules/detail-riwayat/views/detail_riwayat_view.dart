@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/widgets/card/card_detail_view.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/widgets/card/card_detail_view.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import '../../../widgets/card/card_Resep_view.dart';
@@ -26,7 +26,7 @@ class DetailRiwayatView extends StatefulWidget {
 class _DetailRiwayatViewState extends State<DetailRiwayatView> {
   // this enable our app to able to pull down
   late RefreshController _refreshController; // the refresh controller
-  var _scaffoldKey =
+  final _scaffoldKey =
       GlobalKey<ScaffoldState>(); // this is our key to the scaffold widget
   @override
   void initState() {
@@ -45,7 +45,7 @@ class _DetailRiwayatViewState extends State<DetailRiwayatView> {
       body: SmartRefresher(
         controller: _refreshController,
         enablePullDown: true,
-        header: WaterDropHeader(),
+        header: const WaterDropHeader(),
         onLoading: _onLoading,
         onRefresh: _onRefresh,
         child: CustomScrollView(
@@ -66,7 +66,7 @@ class _DetailRiwayatViewState extends State<DetailRiwayatView> {
                     Get.back();
                   }),
               title: Text(
-                "${CustomStringText().RiwayatPasien}",
+                CustomStringText().RiwayatPasien,
                 style: GoogleFonts.nunito(
                     fontSize: 18, fontWeight: FontWeight.bold),
               ),
@@ -133,7 +133,7 @@ class _DetailRiwayatViewState extends State<DetailRiwayatView> {
   _onRefresh() {
     setState(() {
 // so whatever you want to refresh it must be inside the setState
-      DetailRiwayatView(); // if you only want to refresh the list you can place this, so the two can be inside setState
+      const DetailRiwayatView(); // if you only want to refresh the list you can place this, so the two can be inside setState
       _refreshController
           .refreshCompleted(); // request complete,the header will enter complete state,
 // resetFooterState : it will set the footer state from noData to idle

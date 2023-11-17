@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/data/model/regist_rs/daftar_px.dart';
-import 'package:rskgcare/app/modules/detail-poli/controllers/detail_poli_controller.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/data/model/regist_rs/daftar_px.dart';
+import 'package:sirs_averin/app/modules/detail-poli/controllers/detail_poli_controller.dart';
 
 import '../../widgets/color/custom_color.dart';
 import 'dialog_registrasi_gagal_regis.dart';
@@ -120,7 +120,7 @@ class DialogRegisPoli extends GetView<DetailPoliController> {
                             Get.dialog(const DialogSuksesRegis());
                           }
                         },
-                        child: Column(
+                        child: const Column(
                           children: [
                             Text(
                               "Lanjutkan",

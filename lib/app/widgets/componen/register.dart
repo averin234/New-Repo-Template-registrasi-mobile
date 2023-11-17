@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/widgets/componen/calender.dart';
-import 'package:rskgcare/app/widgets/componen/entry_field.dart';
+import 'package:sirs_averin/app/widgets/componen/calender.dart';
+import 'package:sirs_averin/app/widgets/componen/entry_field.dart';
 import '../../data/model/dropdown_model.dart';
 import '../../modules/register_akun/controllers/register_controller.dart';
 import '../color/custom_color.dart';

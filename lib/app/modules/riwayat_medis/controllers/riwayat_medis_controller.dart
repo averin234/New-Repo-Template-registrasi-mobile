@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:rskgcare/app/data/componen/publics.dart';
+import 'package:sirs_averin/app/data/componen/publics.dart';
 
 class RiwayatMedisController extends GetxController {
   //TODO: Implement RiwayatMedisController

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rskgcare/app/data/componen/publics.dart';
+import 'package:sirs_averin/app/data/componen/publics.dart';
 
 class LoginController extends GetxController {
   final usernameController = TextEditingController();
@@ -16,8 +16,7 @@ class LoginController extends GetxController {
     ingatSaya.value = dataRegist.value.ingatSaya ?? false;
     if (ingatSaya.value == true) {
       usernameController.text = dataRegist.value.email ?? '';
-      passwordController.text =
-          dataRegist.value.password ?? '';
+      passwordController.text = dataRegist.value.password ?? '';
     }
     super.onInit();
   }

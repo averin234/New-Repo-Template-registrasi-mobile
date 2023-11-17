@@ -42,7 +42,7 @@ class CustomCard extends StatelessWidget {
             ? CustomColors.warnaputih
             : CustomColors.darkmode2,
         borderRadius: const BorderRadius.all(
-          const Radius.circular(10.0),
+          Radius.circular(10.0),
         ),
       ),
       padding: padding,

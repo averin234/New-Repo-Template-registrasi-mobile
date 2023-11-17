@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rskgcare/app/data/model/regist_rs/all_dokter_klinik.dart';
+import 'package:sirs_averin/app/data/model/regist_rs/all_dokter_klinik.dart';
 import 'package:intl/intl.dart' as intl;
-import 'package:rskgcare/app/routes/app_pages.dart';
+import 'package:sirs_averin/app/routes/app_pages.dart';
 
 import '../../../../widgets/color/custom_color.dart';
 import '../../controllers/register_rs_controller.dart';
@@ -42,7 +42,7 @@ class JadwalPraktik extends StatelessWidget {
             ),
             Row(
               children: [
-                Icon(Icons.access_time_filled,
+                const Icon(Icons.access_time_filled,
                     color: CustomColors.warnabiru),
                 const SizedBox(
                   width: 10,

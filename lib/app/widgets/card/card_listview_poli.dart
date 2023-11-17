@@ -2,10 +2,10 @@ import 'package:dismissible_page/dismissible_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/data/componen/images.dart';
-import 'package:rskgcare/app/data/model/regist_rs/all_dokter_klinik.dart';
-import 'package:rskgcare/app/modules/profile-view/views/profile_view_view.dart';
-import 'package:rskgcare/app/modules/register_rs/views/widgets/jadwal_praktik.dart';
+import 'package:sirs_averin/app/data/componen/images.dart';
+import 'package:sirs_averin/app/data/model/regist_rs/all_dokter_klinik.dart';
+import 'package:sirs_averin/app/modules/profile-view/views/profile_view_view.dart';
+import 'package:sirs_averin/app/modules/register_rs/views/widgets/jadwal_praktik.dart';
 import 'package:text_scroll/text_scroll.dart';
 
 import '../../routes/app_pages.dart';
@@ -265,7 +265,7 @@ class CardListViewPoli extends StatelessWidget {
                               height: 10,
                             ),
                             Padding(
-                              padding: EdgeInsets.only(left: 10),
+                              padding: const EdgeInsets.only(left: 10),
                               child: Text(
                                 'Jadwal Praktik',
                                 style: TextStyle(
@@ -337,8 +337,8 @@ class CardListViewPoli extends StatelessWidget {
                 children: [
                   Text(
                       "Anda Belum Terdaftar atau Login di Aplikasi SIRS ${CustomStringText().namaRS}",
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                          fontSize: 18, fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center),
                   const SizedBox(
                     height: 5,
@@ -372,7 +372,7 @@ class CardListViewPoli extends StatelessWidget {
                               borderRadius: BorderRadius.circular(7),
                               color: CustomColors.warnahijau,
                             ),
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Padding(
                                   padding: EdgeInsets.all(16),
@@ -396,7 +396,7 @@ class CardListViewPoli extends StatelessWidget {
                               borderRadius: BorderRadius.circular(7),
                               color: CustomColors.warnaabu,
                             ),
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Padding(
                                   padding: EdgeInsets.all(16),

@@ -2,7 +2,7 @@ import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:rskgcare/app/modules/daftar_antrian/controllers/daftar_antrian_controller.dart';
+import 'package:sirs_averin/app/modules/daftar_antrian/controllers/daftar_antrian_controller.dart';
 
 import '../color/custom_color.dart';
 

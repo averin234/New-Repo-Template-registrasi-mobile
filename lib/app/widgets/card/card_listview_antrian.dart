@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/data/model/antrian_rs/jadwal_px.dart';
-import 'package:rskgcare/app/data/model/profile_pasien/data_px.dart';
+import 'package:sirs_averin/app/data/model/antrian_rs/jadwal_px.dart';
+import 'package:sirs_averin/app/data/model/profile_pasien/data_px.dart';
 import '../../routes/app_pages.dart';
 import '../color/custom_color.dart';
 import '../font_size/my_font_size.dart';

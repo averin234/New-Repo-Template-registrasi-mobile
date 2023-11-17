@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/widgets/card/card_ticket_antrian.dart';
+import 'package:sirs_averin/app/widgets/card/card_ticket_antrian.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import '../../../widgets/color/custom_color.dart';
 import '../../../widgets/font_size/my_font_size.dart';
@@ -22,7 +22,7 @@ class DetailAntrianView extends StatefulWidget {
 class _DetailAntrianViewState extends State<DetailAntrianView> {
   // this enable our app to able to pull down
   late RefreshController _refreshController; // the refresh controller
-  var _scaffoldKey =
+  final _scaffoldKey =
       GlobalKey<ScaffoldState>(); // this is our key to the scaffold widget
   @override
   void initState() {
@@ -39,7 +39,7 @@ class _DetailAntrianViewState extends State<DetailAntrianView> {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
               builder: (context) =>
-                  DaftarAntrianView()), // Ganti dengan halaman home Anda
+                  const DaftarAntrianView()), // Ganti dengan halaman home Anda
         );
         return true;
       },
@@ -51,7 +51,7 @@ class _DetailAntrianViewState extends State<DetailAntrianView> {
           child: SmartRefresher(
             controller: _refreshController,
             enablePullDown: true,
-            header: WaterDropHeader(),
+            header: const WaterDropHeader(),
             onLoading: _onLoading,
             onRefresh: _onRefresh,
             child: CustomScrollView(
@@ -73,7 +73,7 @@ class _DetailAntrianViewState extends State<DetailAntrianView> {
                         Get.back();
                       }),
                   title: Text(
-                    "${CustomStringText().DetailAntrean}",
+                    CustomStringText().DetailAntrean,
                     style: GoogleFonts.nunito(
                         fontSize: MyFontSize.large1,
                         fontWeight: FontWeight.bold),
@@ -121,7 +121,7 @@ class _DetailAntrianViewState extends State<DetailAntrianView> {
   _onRefresh() {
     setState(() {
 // so whatever you want to refresh it must be inside the setState
-      DetailAntrianView(); // if you only want to refresh the list you can place this, so the two can be inside setState
+      const DetailAntrianView(); // if you only want to refresh the list you can place this, so the two can be inside setState
       _refreshController
           .refreshCompleted(); // request complete,the header will enter complete state,
 // resetFooterState : it will set the footer state from noData to idle

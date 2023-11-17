@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/widgets/card/card_edit.dart';
-import 'package:text_scroll/text_scroll.dart';
+import 'package:sirs_averin/app/widgets/card/card_edit.dart';
 import '../../../widgets/card/card_penting.dart';
 import '../../../widgets/color/custom_color.dart';
 import '../../../widgets/font_size/my_font_size.dart';
@@ -21,7 +20,7 @@ class EditProfileView extends GetView<EditProfileController> {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
               builder: (context) =>
-                  RubahPasswordView()), // Ganti dengan halaman home Anda
+                  const RubahPasswordView()), // Ganti dengan halaman home Anda
         );
         return true;
       },
@@ -47,7 +46,7 @@ class EditProfileView extends GetView<EditProfileController> {
                     Get.back();
                   }),
               title: Text(
-                "${CustomStringText().EditProfile}",
+                CustomStringText().EditProfile,
                 style: GoogleFonts.nunito(
                     fontSize: MyFontSize.large1, fontWeight: FontWeight.bold),
               ),
@@ -58,7 +57,7 @@ class EditProfileView extends GetView<EditProfileController> {
             // Other Sliver Widgets
             SliverList(
               delegate: SliverChildListDelegate([
-                Penting(),
+                const Penting(),
                 const MyRegister1(),
               ]),
             ),

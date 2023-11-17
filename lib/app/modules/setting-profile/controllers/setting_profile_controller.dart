@@ -1,7 +1,7 @@
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info/package_info.dart';
-import 'package:rskgcare/app/data/componen/publics.dart';
+import 'package:sirs_averin/app/data/componen/publics.dart';
 import 'package:get/get.dart';
 
 class SettingProfileController extends GetxController {

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/widgets/componen/password.dart';
-import 'package:rskgcare/app/widgets/componen/register.dart';
-import 'package:rskgcare/app/routes/app_pages.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/widgets/componen/password.dart';
+import 'package:sirs_averin/app/widgets/componen/register.dart';
+import 'package:sirs_averin/app/routes/app_pages.dart';
 
 import '../../../widgets/color/custom_color.dart';
 import '../../../widgets/text/string_text.dart';
@@ -33,7 +33,7 @@ class RegisterView extends GetView<RegisterController> {
                       height: 20,
                     ),
                     Container(
-                      margin: EdgeInsets.only(left: 10, right: 10),
+                      margin: const EdgeInsets.only(left: 10, right: 10),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -47,7 +47,7 @@ class RegisterView extends GetView<RegisterController> {
                             // You can choose how the text scales
                             child: Text(
                               'Register akun Baru \n\nData diri anda terekam di database ${CustomStringText().namaRS}, Mohon periksa kembali data diri anda, dan lakukan refresh saat melakukan perubahan data diri',
-                              style: TextStyle(fontSize: 12.0),
+                              style: const TextStyle(fontSize: 12.0),
                               textAlign: TextAlign.justify,
                             ),
                           ),
@@ -114,7 +114,7 @@ class RegisterView extends GetView<RegisterController> {
   Widget _submitButton() {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        primary: Color(0xff4babe7),
+        backgroundColor: const Color(0xff4babe7),
         minimumSize: const Size.fromHeight(50),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12), // <-- Radius
@@ -168,7 +168,7 @@ class RegisterView extends GetView<RegisterController> {
           Get.snackbar('title', 'message');
         }
       },
-      child: Text('Register Sekarang'),
+      child: const Text('Register Sekarang'),
     );
 
     // Container(

@@ -5,7 +5,7 @@ class FadeSlideTransition extends StatelessWidget {
   final double additionalOffset;
   final Widget child;
 
-  const FadeSlideTransition({
+  const FadeSlideTransition({super.key, 
     required this.animation,
     required this.additionalOffset,
     required this.child,

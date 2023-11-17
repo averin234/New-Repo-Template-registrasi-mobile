@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:get/get.dart';
 
 import '../../../../widgets/color/custom_color.dart';
 
@@ -9,7 +8,7 @@ class CardFromInfoTele extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: CustomColors.warnaputih,
       ),
       child: Stack(
@@ -39,10 +38,10 @@ class CardFromInfoTele extends StatelessWidget {
           borderRadius: BorderRadius.circular(10.0), //<-- SEE HERE
         ),
         color: Colors.transparent,
-        child: Column(
+        child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(
+            SizedBox(
               height: 10,
             ),
             Padding(

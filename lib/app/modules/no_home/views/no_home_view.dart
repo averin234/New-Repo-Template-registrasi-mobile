@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/routes/app_pages.dart';
-import '../../../widgets/card/card_info_rs.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/routes/app_pages.dart';
 import '../../../widgets/color/custom_color.dart';
 import '../../../widgets/card/card_no_antri.dart';
 import '../../../widgets/card/card_slider_poli_no_home.dart';
@@ -38,7 +37,7 @@ class _NoHomeViewState extends State<NoHomeView> {
           TextButton(
             onPressed: () => Get.toNamed(Routes.LOGIN),
             child: Text(
-              "${CustomStringText().MasukDaftar}",
+              CustomStringText().MasukDaftar,
               style: GoogleFonts.nunito(
                 fontSize: 16.0,
                 color: Theme.of(context).brightness == Brightness.light
@@ -86,9 +85,11 @@ class _NoHomeViewState extends State<NoHomeView> {
                     // ),
                     const SizedBox(height: 10),
                     Padding(
-                      padding: EdgeInsets.only(left: 20,),
+                      padding: const EdgeInsets.only(
+                        left: 20,
+                      ),
                       child: Text(
-                        "${CustomStringText().Antreanaatini}",
+                        CustomStringText().Antreanaatini,
                         style: MyStyle.textTitleBlack,
                       ),
                     ),
@@ -97,7 +98,7 @@ class _NoHomeViewState extends State<NoHomeView> {
                       padding:
                           const EdgeInsets.only(top: 10, right: 20, left: 20),
                       child: Text(
-                        "${CustomStringText().LayananUtama}",
+                        CustomStringText().LayananUtama,
                         style: MyStyle.textTitleBlack,
                       ),
                     ),
@@ -120,7 +121,7 @@ class _NoHomeViewState extends State<NoHomeView> {
                         ],
                       ),
                       padding: const EdgeInsets.all(0),
-                      child: Column(
+                      child: const Column(
                         children: [
                           SizedBox(
                             height: 10,

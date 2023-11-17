@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:rskgcare/app/data/componen/images.dart';
-import 'package:rskgcare/app/routes/app_pages.dart';
+import 'package:sirs_averin/app/data/componen/images.dart';
+import 'package:sirs_averin/app/routes/app_pages.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-import 'package:text_scroll/text_scroll.dart';
 
 import '../../../widgets/card/card_penting.dart';
 import '../../../widgets/color/custom_color.dart';
@@ -25,7 +24,7 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
   final RefreshController _refreshController = RefreshController();
 
   Future<void> _onRefresh() async {
-    await Future.delayed(Duration(seconds: 1));
+    await Future.delayed(const Duration(seconds: 1));
     setState(() {
       entries.add(entries.length);
     });
@@ -41,7 +40,7 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
               builder: (context) =>
-                  HomeView()), // Ganti dengan halaman home Anda
+                  const HomeView()), // Ganti dengan halaman home Anda
         );
         return true;
       },
@@ -65,18 +64,18 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
           ),
           actions: [
             Container(
-              margin: EdgeInsets.only(right: 15),
-            child : IconButton(
-              onPressed: () => Get.toNamed(Routes.EDIT_PROFILE),
-              icon: const Icon(
-                Icons.edit_note_rounded,
-                color: CustomColors.warnabiru,
-                size: 45,
+              margin: const EdgeInsets.only(right: 15),
+              child: IconButton(
+                onPressed: () => Get.toNamed(Routes.EDIT_PROFILE),
+                icon: const Icon(
+                  Icons.edit_note_rounded,
+                  color: CustomColors.warnabiru,
+                  size: 45,
                 ),
               ),
             ),
           ],
-          title: Text('${CustomStringText().ProfilePasien}'),
+          title: Text(CustomStringText().ProfilePasien),
         ),
         body: SmartRefresher(
           controller: _refreshController,
@@ -85,8 +84,8 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
             child: Center(
               child: Column(
                 children: [
-                  Penting(),
-                  SizedBox(
+                  const Penting(),
+                  const SizedBox(
                     height: 20,
                   ),
                   CircleAvatar(
@@ -99,7 +98,7 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                               : Avatar.perempuan,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Text(
@@ -114,12 +113,12 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 10, right: 10),
-                    padding: EdgeInsets.all(10),
+                    margin: const EdgeInsets.only(left: 10, right: 10),
+                    padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       color: Theme.of(context).brightness == Brightness.light
                           ? CustomColors.warnaputih
@@ -130,24 +129,24 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          '${CustomStringText().DataDiri}',
+                          CustomStringText().DataDiri,
                           style: GoogleFonts.nunito(
                               fontWeight: FontWeight.bold, fontSize: 17),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         const Divider(
                           color: Colors.grey,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              '${CustomStringText().Email}',
+                              CustomStringText().Email,
                               style: GoogleFonts.nunito(
                                 fontWeight: FontWeight.bold,
                               ),
@@ -160,20 +159,20 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                             fontWeight: FontWeight.normal,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         const Divider(
                           color: Colors.grey,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              '${CustomStringText().NoHP}',
+                              CustomStringText().NoHP,
                               style: GoogleFonts.nunito(
                                 fontWeight: FontWeight.bold,
                               ),
@@ -186,20 +185,20 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                             fontWeight: FontWeight.normal,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         const Divider(
                           color: Colors.grey,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              '${CustomStringText().TglLahir}',
+                              CustomStringText().TglLahir,
                               style: GoogleFonts.nunito(
                                 fontWeight: FontWeight.bold,
                               ),
@@ -213,20 +212,20 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                             fontWeight: FontWeight.normal,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         const Divider(
                           color: Colors.grey,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              '${CustomStringText().Umur}',
+                              CustomStringText().Umur,
                               style: GoogleFonts.nunito(
                                 fontWeight: FontWeight.bold,
                               ),
@@ -239,20 +238,20 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                             fontWeight: FontWeight.normal,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         const Divider(
                           color: Colors.grey,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              '${CustomStringText().TmpLahir}',
+                              CustomStringText().TmpLahir,
                               style: GoogleFonts.nunito(
                                 fontWeight: FontWeight.bold,
                               ),
@@ -265,20 +264,20 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                             fontWeight: FontWeight.normal,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         const Divider(
                           color: Colors.grey,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              '${CustomStringText().Alamat}',
+                              CustomStringText().Alamat,
                               style: GoogleFonts.nunito(
                                 fontWeight: FontWeight.bold,
                               ),
@@ -291,20 +290,20 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                             fontWeight: FontWeight.normal,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         const Divider(
                           color: Colors.grey,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              '${CustomStringText().JenisKelamin}',
+                              CustomStringText().JenisKelamin,
                               style: GoogleFonts.nunito(
                                 fontWeight: FontWeight.bold,
                               ),
@@ -317,20 +316,20 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                             fontWeight: FontWeight.normal,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         const Divider(
                           color: Colors.grey,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              '${CustomStringText().Alergi}',
+                              CustomStringText().Alergi,
                               style: GoogleFonts.nunito(
                                 fontWeight: FontWeight.bold,
                               ),
@@ -343,20 +342,20 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                             fontWeight: FontWeight.normal,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         const Divider(
                           color: Colors.grey,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              '${CustomStringText().GolonganDarah}',
+                              CustomStringText().GolonganDarah,
                               style: GoogleFonts.nunito(
                                 fontWeight: FontWeight.bold,
                               ),
@@ -372,7 +371,7 @@ class _RubahPasswordViewState extends State<RubahPasswordView> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                 ],

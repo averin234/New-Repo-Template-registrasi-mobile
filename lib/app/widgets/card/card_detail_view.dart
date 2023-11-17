@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/data/componen/data_regist_model.dart';
-import 'package:rskgcare/app/data/componen/images.dart';
-import 'package:rskgcare/app/data/model/mr_pasien/detailRiwayat.dart';
+import 'package:sirs_averin/app/data/componen/data_regist_model.dart';
+import 'package:sirs_averin/app/data/componen/images.dart';
+import 'package:sirs_averin/app/data/model/mr_pasien/detailRiwayat.dart';
 
 import '../color/custom_color.dart';
 

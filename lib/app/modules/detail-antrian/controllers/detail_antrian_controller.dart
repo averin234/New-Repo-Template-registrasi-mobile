@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:rskgcare/app/data/model/antrian_rs/jadwal_px.dart';
+import 'package:sirs_averin/app/data/model/antrian_rs/jadwal_px.dart';
 
 import '../../../data/model/profile_pasien/data_px.dart';
 

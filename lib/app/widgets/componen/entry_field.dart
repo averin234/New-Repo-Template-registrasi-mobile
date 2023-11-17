@@ -55,15 +55,15 @@ class MyEntryField extends StatelessWidget {
               readOnly: readonly ?? false,
               decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       width: 1,
                       color: Color(0xffeaeaea),
                     ),
                     borderRadius: BorderRadius.circular(10.0), //<-- SEE HERE
                   ),
-                  border: OutlineInputBorder(
-                    borderRadius: const BorderRadius.all(
-                      const Radius.circular(10.0),
+                  border: const OutlineInputBorder(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(10.0),
                     ),
                     borderSide: BorderSide(
                       width: 0,

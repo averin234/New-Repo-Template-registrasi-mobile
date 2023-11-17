@@ -6,11 +6,11 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/data/componen/images.dart';
-import 'package:rskgcare/app/widgets/componen/calender.dart';
-import 'package:rskgcare/app/widgets/componen/entry_field.dart';
-import 'package:rskgcare/app/routes/app_pages.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/data/componen/images.dart';
+import 'package:sirs_averin/app/widgets/componen/calender.dart';
+import 'package:sirs_averin/app/widgets/componen/entry_field.dart';
+import 'package:sirs_averin/app/routes/app_pages.dart';
 import '../../data/model/dropdown_model.dart';
 import '../color/custom_color.dart';
 import '../../modules/edit-profile/controllers/edit_profile_controller.dart';
@@ -100,8 +100,8 @@ class MyRegister1 extends GetView<EditProfileController> {
           ),
         ),
         Container(
-          margin: EdgeInsets.only(left: 10, right: 10),
-          padding: EdgeInsets.all(10),
+          margin: const EdgeInsets.only(left: 10, right: 10),
+          padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
             color: Theme.of(context).brightness == Brightness.light
                 ? CustomColors.warnaputih
@@ -237,7 +237,7 @@ class MyRegister1 extends GetView<EditProfileController> {
         width: 300,
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
         alignment: Alignment.center,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10)),
             boxShadow: <BoxShadow>[
               BoxShadow(
@@ -249,10 +249,7 @@ class MyRegister1 extends GetView<EditProfileController> {
             gradient: LinearGradient(
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
-                colors: [
-                  CustomColors.warnabiru,
-                  CustomColors.warnabiru
-                ])),
+                colors: [CustomColors.warnabiru, CustomColors.warnabiru])),
         child: Text(
           'Simpan',
           style: GoogleFonts.nunito(

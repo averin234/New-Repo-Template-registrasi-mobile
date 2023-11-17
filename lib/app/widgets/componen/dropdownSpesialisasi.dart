@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/data/model/homepage/poli.dart';
-import 'package:rskgcare/app/modules/register_rs/controllers/register_rs_controller.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/data/model/homepage/poli.dart';
+import 'package:sirs_averin/app/modules/register_rs/controllers/register_rs_controller.dart';
 
 import '../color/custom_color.dart';
 
 class DropDownListExample extends StatefulWidget {
   const DropDownListExample({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   _DropDownListExampleState createState() => _DropDownListExampleState();
@@ -68,8 +68,8 @@ class AppTextField extends StatelessWidget {
     required this.hint,
     required this.isCitySelected,
     required this.lists,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   /// This is on text changed method which will display on city text field on changed.
   void onTextFieldTap() {
@@ -131,7 +131,7 @@ class AppTextField extends StatelessWidget {
           controller: textEditingController,
           cursorColor: CustomColors.warnahitam,
           onTap: onTextFieldTap,
-          style: TextStyle(color: CustomColors.warnahitam),
+          style: const TextStyle(color: CustomColors.warnahitam),
           decoration: InputDecoration(
             filled: true,
             fillColor: Theme.of(context).brightness == Brightness.light

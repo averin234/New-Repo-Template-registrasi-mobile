@@ -19,7 +19,7 @@ class MyAssetsImg extends StatelessWidget {
     return SizedBox(
       height: imgHeight,
       width: imgWidth,
-      child: Image.asset("assets/images/" + imageName, fit: fit),
+      child: Image.asset("assets/images/$imageName", fit: fit),
     );
   }
 }

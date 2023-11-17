@@ -20,7 +20,7 @@ class MySvgAssetsImg extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       child: SvgPicture.asset(
-        "assets/images/" + imageName,
+        "assets/images/$imageName",
         height: imgHeight,
         width: imgWidth,
         allowDrawingOutsideViewBox: false,

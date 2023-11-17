@@ -81,7 +81,7 @@ class MyTextField extends StatelessWidget {
               textInputAction: TextInputAction.next,
               decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       width: 1,
                       color: Color(0xffeaeaea),
                     ),

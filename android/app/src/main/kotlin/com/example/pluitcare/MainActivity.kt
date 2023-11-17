@@ -1,4 +1,4 @@
-package averin.sirs_rskg.com
+package averin.sirs.com
 
 import io.flutter.embedding.android.FlutterActivity
 

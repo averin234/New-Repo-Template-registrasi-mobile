@@ -3,11 +3,11 @@ import 'package:dismissible_page/dismissible_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rskgcare/app/widgets/endpoint/fetch_data.dart';
-import 'package:rskgcare/app/data/componen/images.dart';
-import 'package:rskgcare/app/data/model/regist_rs/all_dokter_klinik.dart';
-import 'package:rskgcare/app/modules/home/controllers/home_controller.dart';
-import 'package:rskgcare/app/modules/profile-view/views/profile_view_view.dart';
+import 'package:sirs_averin/app/widgets/endpoint/fetch_data.dart';
+import 'package:sirs_averin/app/data/componen/images.dart';
+import 'package:sirs_averin/app/data/model/regist_rs/all_dokter_klinik.dart';
+import 'package:sirs_averin/app/modules/home/controllers/home_controller.dart';
+import 'package:sirs_averin/app/modules/profile-view/views/profile_view_view.dart';
 import 'package:text_scroll/text_scroll.dart';
 
 import '../../routes/app_pages.dart';
@@ -51,9 +51,9 @@ class VerticalSliderDemo extends GetView<HomeController> {
 class Item1 extends StatelessWidget {
   final Items items;
   const Item1({
-    Key? key,
+    super.key,
     required this.items,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -168,7 +168,7 @@ class Item1 extends StatelessWidget {
                 children: [
                   Text(
                       "Anda Belum Terdaftar atau Login di Aplikasi SIRS ${CustomStringText().namaRS}",
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: CustomColors.warnahitam,
                           fontSize: 18,
                           fontWeight: FontWeight.bold),
@@ -207,7 +207,7 @@ class Item1 extends StatelessWidget {
                               borderRadius: BorderRadius.circular(7),
                               color: CustomColors.warnabiru,
                             ),
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Padding(
                                   padding: EdgeInsets.all(16),
@@ -231,7 +231,7 @@ class Item1 extends StatelessWidget {
                               borderRadius: BorderRadius.circular(7),
                               color: Colors.greenAccent,
                             ),
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Padding(
                                   padding: EdgeInsets.all(16),
